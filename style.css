@@ -1,0 +1,538 @@
+* {
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Alata',sans-serif;
+    font-size: 15px;
+}
+
+.header {
+    background-image: url('./images/mobile/image-hero.jpg');
+    height : 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding : 20px;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desktopMenu {
+    display: none;
+}
+
+.heroTittle {
+    color : #fff;
+    font-family: 'Josefin Sans',sans-serif;
+    font-weight: 300;
+    margin-top : 200px;
+    border : 1px solid #fff;
+    padding : 30px;
+    font-size: 20px;
+}
+
+.menu {
+    cursor: pointer;
+    height: 20px;
+}
+
+/* mobile menu style */
+
+.menuMobile {
+    display: none;
+    background-color: #000;
+    color : #fff;
+    position: absolute;
+    top : 0;
+    width : 100%;
+    margin-left : -20px;
+    padding : 20px;
+    z-index: 999;
+    height : 700px;
+    animation: appear 0.7s ;
+}
+
+@keyframes appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.close {
+    cursor: pointer;
+}
+
+.menuMobile > ul {
+    margin-top: 250px;
+}
+
+.menuMobile > ul > li {
+    font-family: 'Josefin Sans',sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.menuMobile > ul > li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.closeIcon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.displayMenuMobile {
+    display: block;
+}
+
+/* middle section */
+.midSection {
+    padding : 20px;
+}
+
+.heroMobile {
+    background-image: url('./images/mobile/image-interactive.jpg');
+    background-repeat: no-repeat;
+    background-size: cover  ;
+    margin-block: 50px;
+    width : 330px;
+    height : 300px;
+}
+
+.heroDesc > h1 {
+    font-family: 'Josefin Sans',sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 13px;
+    padding-inline : 30px;
+}
+
+.heroDesc > p {
+    text-align: center;
+    color :  hsl(0, 0%, 55%);
+    font-weight: 400;
+    padding-inline : 30px;
+    line-height: 1.5em;
+    margin-bottom : 20px;
+}
+
+/* creations part */
+
+.creations {
+    display: flex;
+    flex-direction: column;
+    padding : 20px;
+}
+
+.creationsHero > h1 {
+    font-family: 'Josefin Sans',sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+}
+
+.desktopButton {
+    display: none;
+}
+
+.upperPart {
+    display: flex;
+    flex-direction: column;
+}
+
+.deepEearth {
+    background-image: url('./images/mobile/image-deep-earth.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height : 150px;
+    width : 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.nightArcade {
+    background-image: url('./images/mobile/image-night-arcade.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height : 150px;
+    width : 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.soccerTeam {
+    background-image: url('./images/mobile/image-soccer-team.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height : 150px;
+    width : 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.theGrid {
+    background-image: url('./images/mobile/image-grid.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height : 150px;
+    width : 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.bottomPart {
+    display: flex;
+    flex-direction: column;
+}
+
+.above {
+    background-image: url('./images/mobile/image-from-above.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height : 150px;
+    width : 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.borealis {
+    background-image: url('./images/mobile/image-pocket-borealis.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height : 150px;
+    width : 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.curiosity {
+    background-image: url('./images/mobile/image-curiosity.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height : 150px;
+    width : 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.fishEye {
+    background-image: url('./images/mobile/image-fisheye.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height : 150px;
+    width : 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.card > h1 {
+    color : #fff;
+    font-family: 'Josefin Sans',sans-serif;
+    font-weight: 300;
+    padding-left : 20px;
+    position: absolute;
+    bottom : 15px;
+}
+
+.btnMobile {
+    font-family: 'Josefin Sans',sans-serif;
+    letter-spacing: 5px;
+    background-color: transparent;
+    border : 1px solid #000;
+    padding : 20px;
+    width : 150px;
+    margin: 0 auto;
+    margin-block: 30px 50px;
+    transition: 0.3s ease-in-out;
+}
+
+.btnMobile:hover {
+    cursor: pointer;
+    background-color: #000;
+    color : #fff;
+}
+
+/* footer */
+footer {
+    background-color: #000;
+    color : #fff;
+    padding : 30px;
+    text-align: center;
+}
+
+.top > img {
+    margin-block: 20px;
+}
+
+ ul {
+    list-style: none;
+}
+
+ul > li {
+    margin-bottom: 10px;
+}
+
+.socialMedia {
+    display: none;
+}
+
+.bottom > p {
+    margin-top : 40px;
+}
+
+/* desktop version */
+
+@media screen and (min-width : 1200px) {
+    .header {
+        background-image: url('./images/desktop/image-hero.jpg');
+        padding : 80px;
+    }
+
+    .heroTittle {
+        width: 400px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .desktopMenu {
+        display: block;
+    }
+
+    .desktopMenu > ul {
+        display: flex;
+    }
+
+    .desktopMenu > ul > li {
+        color : #fff;
+        margin-left : 15px;
+        font-size: 18px;
+    }
+
+    .desktopMenu > ul > li:hover {
+        cursor: pointer;
+    }
+
+    .heroMobile {
+        background-image: url('./images/desktop/image-interactive.jpg');
+        width : 600px;
+        height : 500px;
+    }
+
+    .midSection {
+        padding : 20px;
+        padding-inline : 5em;
+        position: relative;
+    }
+    
+    .heroDesc {
+        width : 500px;
+        padding : 20px;
+        background-color: #fff;
+        position: absolute;
+        left : 39em;
+        bottom : 1.2em;
+    }
+
+    .heroDesc > h1 {
+        text-align: left;
+    }
+
+    .heroDesc > p {
+        text-align: left;
+    }
+
+    .creations {
+        padding : 75px;
+    }
+
+    .creationsHero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .desktopButton {
+            display: block;
+            font-family: 'Josefin Sans',sans-serif;
+            letter-spacing: 5px;
+            background-color: transparent;
+            border : 1px solid #000;
+            padding : 20px;
+            width : 150px;
+            transition: 0.3s ease-in-out;
+            margin : 0;
+    }
+
+    .desktopButton:hover {
+            cursor: pointer;
+            background-color: #000;
+            color : #fff;
+    }
+
+    .upperPart {
+        flex-direction: row;
+    }
+
+
+    .deepEearth {
+        background-image: url('./images/desktop/image-deep-earth.jpg');
+        height : 400px;
+        margin-bottom: 30px;
+        margin-right: 30px;
+        transition: 0.5s ease-in-out;
+    }
+
+    .deepEearth:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
+
+    .nightArcade {
+        background-image: url('./images/desktop/image-night-arcade.jpg');
+        height : 400px;
+        margin-bottom: 30px;
+        margin-right: 30px;
+    }
+
+    .nightArcade:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
+
+    .soccerTeam {
+        background-image: url('./images/desktop/image-soccer-team.jpg');
+        height : 400px;
+        margin-bottom: 30px;
+        margin-right: 30px;
+    }
+
+    .soccerTeam:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
+
+    .theGrid {
+        background-image: url('./images/desktop/image-grid.jpg');
+        height : 400px;
+        margin-bottom: 30px;
+        margin-right: 30px;
+    }
+
+    .theGrid:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
+
+    .bottomPart {
+        flex-direction: row;
+    }
+
+    .above {
+        background-image: url('./images/desktop/image-from-above.jpg');
+        height : 400px;
+        margin-bottom: 30px;
+        margin-right: 30px;
+    }
+
+    .above:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
+
+    .borealis {
+        background-image: url('./images/desktop/image-pocket-borealis.jpg');
+        height : 400px;
+        margin-bottom: 30px;
+        margin-right: 30px;
+    }
+
+    .borealis:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
+
+    .curiosity {
+        background-image: url('./images/desktop/image-curiosity.jpg');
+        height : 400px;
+        margin-bottom: 30px;
+        margin-right: 30px;
+    }
+
+    .curiosity:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
+
+
+    .fishEye {
+        background-image: url('./images/desktop/image-fisheye.jpg');
+        height : 400px;
+        margin-bottom: 30px;
+        margin-right: 30px;
+    }
+
+    .fishEye:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
+
+    .btnMobile {
+        display: none;
+    }
+
+    footer {
+        padding-inline : 75px;
+    } 
+    
+   footer > ul {
+       display: flex;
+   }
+
+   .top {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+   }
+
+   .socialMedia {
+       display: flex;
+    }
+
+    .socialMedia > img {
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    .bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    ul > li {
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+
+    .bottom > p {
+        margin-top: 0;
+        opacity: 0.7;
+    }
+
+}
